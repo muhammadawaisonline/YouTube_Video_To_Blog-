@@ -1,4 +1,5 @@
 from crewai import Agent
+from tools import yt_tool
 
 
 ## Create a blog Content Reacher
@@ -10,7 +11,7 @@ blog_researcher = Agent(
     backstory=(
         "Expert in Understanding informative explainer videos and providing suggestion"
     ),
-    tools=[],
+    tools=[yt_tool],
     allow_delegation=True
 
 
@@ -27,6 +28,6 @@ blog_writer = Agent(
         "engagging narrative that captivate and educate, bringing new"
         "discoveries to light in an accessible manner"
     ),
-    tools=[],
+    tools=[yt_tool],
     allow_delegation=False,
 )
