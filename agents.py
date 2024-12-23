@@ -26,5 +26,7 @@ blog_writer = Agent(
         "you transform complex concepts into clear and concise explainer videos"
         "engagging narrative that captivate and educate, bringing new"
         "discoveries to light in an accessible manner"
-    )
+    ),
+    tools=[],
+    allow_delegation=False,
 )
