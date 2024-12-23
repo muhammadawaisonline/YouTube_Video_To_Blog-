@@ -15,3 +15,16 @@ blog_researcher = Agent(
 
 
 )
+
+blog_writer = Agent(
+    role= "Blog writer",
+    goal = "write compelling blogs about the video {topic} from YouTube Channel",
+    verbose = True,
+    memory = True,
+    backstory=(
+        "with a flair for simplfying  complex topics into digestible and engaging content"
+        "you transform complex concepts into clear and concise explainer videos"
+        "engagging narrative that captivate and educate, bringing new"
+        "discoveries to light in an accessible manner"
+    )
+)
